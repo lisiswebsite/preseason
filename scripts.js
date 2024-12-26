@@ -1,5 +1,6 @@
 document.getElementById('quizForm').addEventListener('submit', function(event) {
     event.preventDefault();
+
     let valid = true;
     let errorMessages = [];
     const questions = [
@@ -12,19 +13,37 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
         { name: 'q7', required: 9 }
     ];
 
+    const formData = {};
+
     questions.forEach(question => {
-        const selectedOptions = document.querySelectorAll(`input[name="${question.name}"]:checked`).length;
-        if (selectedOptions !== question.required) {
+        const selectedOptions = Array.from(document.querySelectorAll(`input[name="${question.name}"]:checked`)).map(input => input.value);
+        if (selectedOptions.length !== question.required) {
             valid = false;
             errorMessages.push(`Please select exactly ${question.required} options for question ${question.name.slice(1)}`);
         }
+        formData[question.name] = selectedOptions;
     });
 
     if (!valid) {
         alert(errorMessages.join('\n'));
     } else {
-        alert('Form submitted successfully!');
-        // Submit the form
-        document.getElementById('quizForm').submit();
+        fetch('https://script.google.com/macros/s/AKfycbzmwuH2dvD1_zeNqiJ0v_wOhBGxPX7mHPpzD1FCn3m5IOzDIz91jUYNFfJ8PSMN0ieu/exec', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.result === 'Success') {
+                alert('Your responses have been recorded!');
+                document.getElementById('quizForm').reset();
+            } else {
+                alert('There was an error recording your responses. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('There was a problem submitting your responses.');
+        });
     }
 });
