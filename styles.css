@@ -6,16 +6,40 @@
     font-size: 18px;
 }
 
-h1, h4 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: #003b5b;
+header {
+    background-color: #000000;
+    color: #FFCE2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.secondary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* You can adjust this color */
+    padding: 1rem;
+    border-bottom: 1px solid #ddd; /* Optional, for separation */
+}
+
+.secondary-header h2 {
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: #333; /* Color can be adjusted */
+    margin-right: auto; /* This will push the dropdown to the right */
+}
+
+p {
+    margin-bottom: 5%;
+    font-size: 2em;
+    color: #333;
 }
 
 #submit {
     border: none;
-    background-color: orangered;
-    color: white;
+    background-color: #FFCE2E;
+    color: black;
     width: 200px;
     margin-top: 10px;
     border-radius: 5px;
