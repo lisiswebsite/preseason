@@ -36,6 +36,10 @@ label input {
     margin-right: 10px;
     flex-shrink: 0;
 }
+label img {
+    width: 100%;
+    margin-right: 10px;
+}
 label span {
     flex-grow: 1;
 }
@@ -54,7 +58,6 @@ label span {
     margin-bottom: 20px;
 	width: 80%;
 }
-
 .options {
 	width: 20%;
 	margin-top: 20px;
