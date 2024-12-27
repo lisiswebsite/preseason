@@ -1,3 +1,12 @@
+// Ensure the Google API client is loaded
+gapi.load('client:auth2', async function() {
+    await gapi.client.init({
+      clientId: '859453825073-pglmbh0mmskg8umapi71m9ul868g3q65.apps.googleusercontent.com',
+      scope: 'https://www.googleapis.com/auth/spreadsheets',
+      discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"]
+    });
+  });  
+
 document.getElementById('quizForm').addEventListener('submit', async function (event) {
     event.preventDefault();
 
