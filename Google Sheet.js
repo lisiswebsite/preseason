@@ -1,6 +1,6 @@
 const scriptURL = 'Your Google App Script URL'
 
-const form = document.forms['contact-form']
+const form = document.forms['vote-form']
 
 form.addEventListener('submit', e => {
   
