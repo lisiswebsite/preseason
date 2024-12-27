@@ -15,19 +15,20 @@ const requiredSelections = {
 form.addEventListener('submit', e => {
   e.preventDefault()
   
-  // Check selections for each position
-  let allValid = true;
+  // Collect all invalid positions
+  const invalidPositions = [];
 
   for (const [position, required] of Object.entries(requiredSelections)) {
     const selectedOptions = document.querySelectorAll(`input[data-position="${position}"]:checked`);
     if (selectedOptions.length !== required) {
-      alert(`Please select exactly ${required} ${position}.`);
-      allValid = false;
-      break;
+      invalidPositions.push(`${required} ${position.replace('position', '')}`);
     }
   }
 
-  if (allValid) {
+  if (invalidPositions.length > 0) {
+    // Display a single error message listing all invalid positions
+    alert(`In order to submit, you must select exactly\n\n${invalidPositions.join('\n')}\n\nPlease ensure you have selected the correct number of players for each section.`);
+  } else {
     // Submit the form if all validations pass
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
       .then((response) => alert("Your ballot has been cast. Thanks for participating!"))
