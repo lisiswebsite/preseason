@@ -1,4 +1,4 @@
-const scriptURL = 'Your Google App Script URL'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyKNA-M2hD05wNDRSmMH70TmK35nEmI4y-2gyyjNRNd0OEOAl6dWJaDlOYdvS0CBgSPSw/exec'
 
 const form = document.forms['vote-form']
 
