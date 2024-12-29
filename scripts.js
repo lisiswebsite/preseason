@@ -3,13 +3,13 @@ const form = document.forms['vote-form']
 
 // Define the required number of options for each position
 const requiredSelections = {
-  "catchers in section 1": 3, // Users must select 3 options for catcher (Question 1)
-  "first baseman in section 2": 1,
-  "infielders in section 3": 8,
-  "utility players in section 4": 2,
-  "outfielders in section 5": 6,
-  "left-handed pitchers in section 6": 5,
-  "right-handed pitchers in section 7": 9
+  "catchers": 3, // Users must select 3 options for catcher (Question 1)
+  "first baseman": 1,
+  "infielders": 8,
+  "utility players": 2,
+  "outfielders": 6,
+  "left-handed pitchers": 5,
+  "right-handed pitchers": 9
 };
 
 // Populate player information
@@ -68,7 +68,7 @@ form.addEventListener('submit', e => {
 
   if (invalidPositions.length > 0) {
     // Display a single error message listing all invalid positions
-    alert(`In order to submit, you must select exactly\n\n${invalidPositions.join('\n')}\n\nPlease ensure you have selected the correct number of players for each section.`);
+    alert(`In order to submit, you must select exactly\n\n${invalidPositions.join('\n')}\n\nPlease ensure you have selected the correct number of players for each position.`);
   } else {
     // Submit the form if all validations pass
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
