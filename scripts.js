@@ -12,6 +12,22 @@ const requiredSelections = {
   "right-handed pitchers in section 7": 9
 };
 
+// Populate player information
+document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+  const playerName = checkbox.value;
+  const player = players.find(p => p.name === playerName);
+  if (player) {
+    const playerInfoDiv = checkbox.parentElement.querySelector('.player-info');
+    playerInfoDiv.innerHTML = `
+      <h3>${player.year} | ${player.ht} | ${player.hometown}</h3>
+      <p><b>Major:</b> ${player.major}</p>
+      <p><b>Favorite food:</b> ${player.food}</p>
+      <p><b>Interests:</b> ${player.interests}</p>
+      <p><b>Fun fact:</b> ${player.funfact}</p>
+    `;
+  }
+});
+
 form.addEventListener('submit', e => {
   e.preventDefault()
   

@@ -19,15 +19,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff; /* You can adjust this color */
+    background-color: #fff;
     padding: 1rem;
-    border-bottom: 1px solid #ddd; /* Optional, for separation */
+    border-bottom: 1px solid #ddd;
 }
 
 .secondary-header h2 {
-    font-size: 1.5rem; /* Adjust size as needed */
-    color: #333; /* Color can be adjusted */
-    margin-right: auto; /* This will push the dropdown to the right */
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: auto;
 }
 
 p {
@@ -56,9 +56,8 @@ p {
   }
 
 .options {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Enable wrapping */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem; /* Adjust the gap size between items */
     max-width: 100vw; /* Optional: Set a maximum width for the row */
 }
@@ -73,6 +72,7 @@ label {
 label img {
     width: 100%;
     height: auto;
+    margin-bottom: 5%;
 }
 
 label input {
@@ -87,8 +87,57 @@ input, textarea {
 
 label span {
     flex-grow: 1;
+    font-weight: bold;
+}
+
+.player-info h3 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.player-info p {
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+b {
+    font-size: 1em;
 }
 
 .question {
     margin-bottom: 10%;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    label span {
+        font-size: 1.8em;
+    }
+
+    .player-info h3 {
+        font-size: 1em;
+    }
+
+    .player-info p {
+        font-size: 0.8em;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 1023px) {
+    label span {
+        font-size: 0.8em;
+    }
+
+    .player-info h3 {
+        font-size: 0.5em;
+    }
+
+    .player-info p {
+        font-size: 0.5em;
+    }
+
+    .options {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
+    }
 }
