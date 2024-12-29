@@ -124,6 +124,19 @@ b {
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
+    .menu a {
+        margin-right: 20px; /* Adds 20px of space between the items */
+    }
+    
+    .menu a:last-child {
+        margin-right: 0; /* Removes extra margin after the last image */
+    }
+    
+    .menu {
+        display: flex; /* Ensures that the images stay on the same line */
+        align-items: center; /* Vertically aligns the items if needed */
+    }
+    
     label span {
         font-size: 1.8em;
     }
@@ -138,7 +151,15 @@ b {
 }
 
 /* Mobile */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {   
+    .secondary-header h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+    
     label span {
         font-size: 0.8em;
     }
@@ -153,5 +174,6 @@ b {
 
     .options {
         grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
+        gap: 0.4rem; /* Adjust the gap size between items */
     }
 }
