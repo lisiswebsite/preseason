@@ -38,7 +38,7 @@ const players = [
         major: "Interior design",
         food: "-undefined-",
         interests: "-undefined-",
-        funfact: "Spent a week living at LaGuardia while waiting for his lease term to start",},
+        funfact: "Spent a week living at LaGuardia while waiting for his lease to start",},
     { no: 9, name: "Walker Mendez", pos: "INF", year: "Sophomore", ht: "6'1\"", wt: "205 lbs", hometown: "Wayne, NJ", school: "Wayne Hills HS", bt: "L/R", image: "images/9 Walker Mendez.jpg",
         major: "Architecture",
         food: "-undefined-",
