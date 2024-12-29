@@ -253,7 +253,7 @@ const players = [
         major: "Graphic design",
         food: "-undefined-",
         interests: "-undefined-",
-        funfact: "Trained a local crow to bring leave shiny objects on his windowsill",},
+        funfact: "Trained a local crow to leave shiny objects on his windowsill",},
     { no: 55, name: "Nilo Socc", pos: "INF", year: "Senior", ht: "5'11\"", wt: "0 lbs", hometown: "Ballston Spa, NY", school: "Ballston Spa HS", bt: "R/R", image: "images/55 Nilo Socc.jpg",
         major: "Architecture",
         food: "-undefined-",
