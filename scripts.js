@@ -28,6 +28,31 @@ document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
   }
 });
 
+// Function to update checkbox opacity based on selection limits
+function updateCheckboxOpacity(position) {
+  const checkboxes = document.querySelectorAll(`input[data-position="${position}"]`);
+  const required = requiredSelections[position];
+  const selectedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+
+  checkboxes.forEach(cb => {
+    if (selectedCount === required && !cb.checked) {
+      cb.parentElement.style.opacity = '0.5'; // Lower opacity for unchecked boxes
+      cb.disabled = true; // Optional: Disable unchecked boxes
+    } else {
+      cb.parentElement.style.opacity = '1'; // Reset opacity
+      cb.disabled = false; // Re-enable boxes
+    }
+  });
+}
+
+// Add event listener to all checkboxes
+document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+  checkbox.addEventListener('change', () => {
+    const position = checkbox.getAttribute('data-position');
+    updateCheckboxOpacity(position); // Update opacity whenever a checkbox is checked/unchecked
+  });
+});
+
 form.addEventListener('submit', e => {
   e.preventDefault()
   

@@ -64,9 +64,13 @@ p {
 
 label {
     margin-bottom: 5%;
-    flex: 0 0 calc((100% - 2rem) / 3); /* Ensure 3 items per row */
-    box-sizing: border-box; /* Include padding and border in width calculation */
-    text-align: center; /* Center-align content within each wrapper */
+    flex: 0 0 calc((100% - 2rem) / 3);
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s, border-width 0.3s;
 }
 
 label img {
@@ -77,6 +81,7 @@ label img {
 
 label input {
     flex-shrink: 0;
+    display: none; /* Optionally hide the checkbox itself */
 }
 
 input, textarea {
@@ -88,6 +93,15 @@ input, textarea {
 label span {
     flex-grow: 1;
     font-weight: bold;
+}
+
+label input:checked + span {
+    border: 3px solid #FFCE2E;
+}
+
+label:has(input:checked) {
+    border-color: #FFCE2E; /* Green border */
+    border-width: 3px;   /* Thicker border */
 }
 
 .player-info h3 {
