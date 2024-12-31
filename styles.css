@@ -133,6 +133,15 @@ footer h3 {
     font-weight: normal;
 }
 
+.disclaimer {
+    margin-top: 0;
+}
+
+.disclaimer p {
+    font-size: 0.7rem;
+    color: grey;
+}
+
 /* Desktop */
 @media screen and (min-width: 1024px) {
     .menu a {
