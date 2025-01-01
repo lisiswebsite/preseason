@@ -67,9 +67,10 @@ label {
     box-sizing: border-box;
     text-align: center;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 5%;
     border-radius: 5px;
     transition: border-color 0.3s, border-width 0.3s;
+    overflow: hidden; /* Ensure content does not overflow the label */
 }
 
 label img {
@@ -80,7 +81,7 @@ label img {
 
 label input {
     flex-shrink: 0;
-    display: none; /* Optionally hide the checkbox itself */
+    display: none;
 }
 
 input, textarea {
@@ -92,6 +93,7 @@ input, textarea {
 label span {
     flex-grow: 1;
     font-weight: bold;
+    overflow: hidden; /* Hide overflow text */
 }
 
 label input:checked + span {
@@ -99,8 +101,8 @@ label input:checked + span {
 }
 
 label:has(input:checked) {
-    border-color: #FFCE2E; /* Green border */
-    border-width: 3px;   /* Thicker border */
+    border-color: #FFCE2E;
+    border-width: 3px;
 }
 
 .player-info h3 {
@@ -228,10 +230,11 @@ footer h3 {
     }
     
     label span {
-        font-size: 1em;
+        font-size: 0.9em;
         line-height: 1em;
         margin-top: -0.2em; /* Adjust the top margin to reduce vertical gap */
         margin-bottom: -0.2em;
+        overflow: hidden;
     }
 
     .player-info h3 {
@@ -247,5 +250,14 @@ footer h3 {
     .options {
         grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
         gap: 0.4rem; /* Adjust the gap size between items */
+    }
+
+    label {
+        width: 100%; /* Ensure labels take full width of the grid column */
+    }
+
+    label img {
+        width: 100%; /* Ensure images take full width of the label */
+        height: auto; /* Maintain aspect ratio */
     }
 }
