@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
 
@@ -142,21 +142,23 @@ footer h3 {
     color: grey;
 }
 
+.menu a {
+    margin-right: 20px; /* Adds 20px of space between the items */
+    color: #FFCE2E;
+    text-decoration: none;
+}
+
+.menu a:last-child {
+    margin-right: 0; /* Removes extra margin after the last image */
+}
+
+.menu {
+    display: flex; /* Ensures that the images stay on the same line */
+    align-items: center; /* Vertically aligns the items if needed */
+}
+
 /* Desktop */
 @media screen and (min-width: 1024px) {
-    .menu a {
-        margin-right: 20px; /* Adds 20px of space between the items */
-    }
-    
-    .menu a:last-child {
-        margin-right: 0; /* Removes extra margin after the last image */
-    }
-    
-    .menu {
-        display: flex; /* Ensures that the images stay on the same line */
-        align-items: center; /* Vertically aligns the items if needed */
-    }
-    
     label span {
         font-size: 1.8em;
     }
@@ -203,6 +205,20 @@ footer h3 {
 
 /* Mobile */
 @media screen and (max-width: 767px) {   
+    .menu {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-end; /* Align items to the right */
+    }
+
+    .menu a {
+        margin-right: 0; /* Remove right margin */
+        /* margin-bottom: 10px; */
+    }
+
+    .menu a:last-child {
+        margin-bottom: 0; /* Remove bottom margin for the last item */
+    }
+    
     .secondary-header h2 {
         font-size: 1em;
     }
