@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
 }
 
 header {
@@ -146,7 +145,7 @@ footer h3 {
     margin-right: 20px; /* Adds 20px of space between the items */
     color: #FFCE2E;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .menu a:last-child {
@@ -169,7 +168,7 @@ footer h3 {
     }
 
     .player-info p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
@@ -180,22 +179,22 @@ footer h3 {
     }
 
     p {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
     
     label span {
-        font-size: 1em;
+        font-size: 1.6em;
         line-height: 1.2; /* Adjust line-height for tabloid view */
         margin-top: 0; /* Reset margin adjustments */
         margin-bottom: 0; /* Reset margin adjustments */
     }
 
     .player-info h3 {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .player-info p {
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     .options {
@@ -229,13 +228,15 @@ footer h3 {
     }
     
     label span {
-        font-size: 0.8em;
+        font-size: 1em;
         line-height: 1em;
         margin-top: -0.2em; /* Adjust the top margin to reduce vertical gap */
         margin-bottom: -0.2em;
     }
 
     .player-info h3 {
+        margin-top: 0.2em;
+        margin-bottom: 0.6em;
         font-size: 0.5em;
     }
 
