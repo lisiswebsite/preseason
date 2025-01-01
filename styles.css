@@ -146,6 +146,7 @@ footer h3 {
     margin-right: 20px; /* Adds 20px of space between the items */
     color: #FFCE2E;
     text-decoration: none;
+    font-size: 0.8em;
 }
 
 .menu a:last-child {
@@ -212,7 +213,7 @@ footer h3 {
 
     .menu a {
         margin-right: 0; /* Remove right margin */
-        /* margin-bottom: 10px; */
+        margin-bottom: 0.4em;
     }
 
     .menu a:last-child {
