@@ -287,7 +287,7 @@ const players = [
     { no: 67, name: "Wren Pagon", pos: "INF", year: "Junior", ht: "5'9\"", wt: "0 lbs", hometown: "Cerritos, CA", school: "Gahr HS", bt: "L/R", image: "images/67 Wren Pagon.jpg",
         major: "Industrial design",
         food: "McRib",
-        interests: "Dirt biking, Brooklyn Nine-Nine (TV), Bad Bunny (music), The Outsiders (book)",
+        interests: "Dirt biking, Brooklyn Nine-Nine (TV), Bad Bunny (music), The Great Gatsby (book)",
         funfact: "Was on an episode of Shark Tank",},
     { no: 69, name: "Cumnong Hamdic", pos: "INF", year: "Freshman", ht: "6'2\"", wt: "0 lbs", hometown: "Niceville, FL", school: "Niceville HS", bt: "L/L", image: "images/69 Cumnong Hamdic.jpg",
         major: "Sculpture",
