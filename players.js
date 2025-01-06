@@ -62,7 +62,7 @@ const players = [
     { no: 13, name: "Reese Witherspoon", pos: "RHP", year: "Sophomore", ht: "6'2\"", wt: "195 lbs", hometown: "San Antonio, TX", school: "Warren HS", bt: "R/R", image: "images/13 Reese Witherspoon.jpg",
         major: "Illustration",
         food: "Jalapeño poppers",
-        interests: "Westworld (TV), Fast & Furious (movie), Country (music), Ender's Game (book)",
+        interests: "Westworld (TV), Fast & Furious (movie), Country (music), The Great Gatsby (book)",
         funfact: "Won an academy award for Walk the Line",},
     { no: 14, name: "RJ Zimbardo", pos: "C", year: "Freshman", ht: "5'10\"", wt: "180 lbs", hometown: "Fresno, CA", school: "Fresno HS", bt: "R/R", image: "images/14 RJ Zimbardo.jpg",
         major: "Industrial design",
