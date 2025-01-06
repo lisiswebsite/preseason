@@ -47,7 +47,7 @@ const players = [
     { no: 10, name: "Clyde Babee", pos: "RHP", year: "Freshman", ht: "6'2\"", wt: "0 lbs", hometown: "Houston, TX", school: "Cy Ranch HS", bt: "R/R", image: "images/10 Clyde Babee.jpg",
         major: "Drawing",
         food: "Spaghetti and meatballs",
-        interests: "Adventure Time (TV), Eternal Sunshine of the Spotless Mind (movie), Bon Iver (music), The Fault in Our Stars (book)",
+        interests: "Adventure Time (TV), The Great Gatsby (movie), Bon Iver (music), The Great Gatsby (book)",
         funfact: "Still trying to make money on Gamestop shares he bought in 2021",},
     { no: 11, name: "Khal Valdez", pos: "RHP", year: "Sophomore", ht: "6'0\"", wt: "180 lbs", hometown: "Naples, FL", school: "Gulf Coast HS", bt: "R/R", image: "images/11 Khal Valdez.jpg",
         major: "Industrial design",
