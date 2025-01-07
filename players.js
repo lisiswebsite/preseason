@@ -194,7 +194,7 @@ const players = [
         food: "Lucky Charms",
         interests: "South Park (TV), The Sandlot (movie), Rap (music), The Great Gatsby (book)",
         funfact: "Favorite cereal is Lucky Charms",},
-    { no: 40, name: "Leighton D'Amato", pos: "INF", year: "Senior", ht: "6'0\"", wt: "210 lbs", hometown: "Austin, TX", school: "Lake Travis HS", bt: "L/L", image: "images/40 Leighton D'Amato.jpg",
+    { no: 40, name: "Leighton D'Amato", pos: "INF", year: "Senior", ht: "6'0\"", wt: "210 lbs", hometown: "Austin, TX", school: "Lake Travis HS", bt: "L/R", image: "images/40 Leighton D'Amato.jpg",
         major: "Art education",
         food: "Burgers",
         interests: "Psych (TV), Talladega Nights: The Ballad of Ricky Bobby (movie), Rihanna (music), To Kill a Mockingbird (book)",
